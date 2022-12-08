@@ -4,7 +4,7 @@
   become: yes
 
   tasks:
-  - name: Install Httpd
+  - name: Install HTTPD
     yum:
       name: httpd
       state: present
