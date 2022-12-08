@@ -3,7 +3,7 @@
   hosts: n1
 
   task:
-  - nmae: ensure directory
+  - name: ensure directory
     file:
       path: /home/centos/vsdr
       state: directory
