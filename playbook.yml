@@ -1,0 +1,11 @@
+---
+- name: upadte n1 server
+  hosts: n1
+
+  task:
+  - nmae: ensure directory
+    file:
+      path: /home/centos/vsdr
+      state: directory
+
+...
