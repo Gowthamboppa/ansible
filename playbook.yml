@@ -1,9 +1,9 @@
 ---
-- name: upadte n1 server
+- name: Update n1 server
   hosts: n1
 
   task:
-  - name: ensure directory
+  - name: Ensure directory
     file:
       path: /home/centos/vsdr
       state: directory
