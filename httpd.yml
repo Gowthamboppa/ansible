@@ -7,14 +7,17 @@
     yum:
       name: httpd
       state: latest
+      become: yes
   - name: start httpd
     service:
       name: httpd
       state: started
+      become: yes
   - name: enable httpd
     service:
       name: httpd
       enabled: true
+      become: yes
 
 
 
