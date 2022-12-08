@@ -1,23 +1,24 @@
 ---
 - name: Set up httpd
   hosts: n1
+  become: yes
 
   tasks:
   - name: Install Httpd
     yum:
       name: httpd
       state: present
-      become: yes
+      
   - name: Start Httpd
     service:
       name: httpd
       state: started
-      become: yes
+      
   - name: Enable Httpd
     service:
       name: httpd
       enabled: true
-      become: yes
+      
 
 
 
