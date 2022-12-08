@@ -2,7 +2,7 @@
 - name: Update n1 server
   hosts: n1
 
-  task:
+  tasks:
   - name: Ensure directory
     file:
       path: /home/centos/vsdr
