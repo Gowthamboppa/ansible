@@ -7,20 +7,20 @@
   tasks:
   - name: install apache2
     yum:
-      name: httpd
+      name: apache2
       state: present
     
 
       
   - name: Start apache2
     service:
-      name: httpd
+      name: apache2
       state: started
       
       
   - name: Enable apache2
     service:
-      name: httpd
+      name: apache2
       enabled: true
       
       
