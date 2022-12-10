@@ -1,0 +1,29 @@
+---
+- name: Set up apache2
+  hosts: n1
+  
+
+  tasks:
+  - name: install apache2
+    yum:
+      name: httpd
+      state: present
+      become: yes
+
+      
+  - name: Start apache2
+    service:
+      name: httpd
+      state: started
+      become: yes
+      
+  - name: Enable apache2
+    service:
+      name: httpd
+      enabled: true
+      become: yes
+      
+
+
+
+...
