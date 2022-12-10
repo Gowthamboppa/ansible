@@ -1,6 +1,6 @@
 ---
 - name: Set up apache2
-  hosts: n1
+  hosts: n2
   become: yes
   
 
