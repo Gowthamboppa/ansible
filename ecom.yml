@@ -1,0 +1,20 @@
+---
+- name: Set up httpd
+  hosts: n1
+  
+
+  tasks:
+  - name: install git
+    yum:
+      name: git
+      state: present
+      become: yes
+
+      
+  - name: cloning
+    git:
+      dest: /var/www/html
+      repo: https://github.com/ravi2krishna/ecomm.git
+      become: yes
+
+...
