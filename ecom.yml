@@ -1,14 +1,15 @@
 ---
 - name: Set up httpd
   hosts: n1
+  become: yes 
   
 
   tasks:
   - name: Install git
     yum:
       name: git
-      state: installed
-      become: yes
+      state: present
+      
 
       
   - name: cloning
