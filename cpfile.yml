@@ -1,0 +1,10 @@
+---
+- name: Copying the file to all server
+  hosts: all      
+ 
+  tasks:
+  - name: Copting file
+    copy:
+      src: file.txt
+      dest: home/centos/file.txt
+...
