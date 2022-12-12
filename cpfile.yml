@@ -1,10 +1,19 @@
 ---
 - name: Copying the file to all server
-  hosts: all      
+  hosts: all
+  become: yes      
  
   tasks:
   - name: Copting file
     copy:
       src: file.txt
-      dest: home/centos/file.txt
-...
+      dest: /home/ubuntu/file.txt
+    when: ansible_distribution == "Ubuntu" or ansible_distribution== "Debain"
+  - name: Copting file
+    copy:
+      src: file.txt
+      dest: /home/centos/file.txt
+    when: ansible_distribution == "CentOS" or ansible_distribution== "Amazon"
+
+    
+    
