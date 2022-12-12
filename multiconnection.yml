@@ -1,7 +1,7 @@
 ---
  - name: Set up webserver in all
-  hosts: all
-  become: yes
+   hosts: all
+   become: yes
   
 
   tasks:
