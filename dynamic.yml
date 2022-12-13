@@ -2,6 +2,8 @@
 - name: cretaing dyamic page
   hosts: all
   become: yes
+  var: 
+  user_nmae: gowtham
   
 
   tasks:
