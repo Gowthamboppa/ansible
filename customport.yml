@@ -7,4 +7,4 @@
   tasks:
   template:
     src: httpd.j2
-    dest: /var/www/html/dynamic.html
+    dest: /etc/httpd/conf/httpd.conf
