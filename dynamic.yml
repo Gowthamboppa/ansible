@@ -1,10 +1,14 @@
 ---
-- name: craeting dyamic page
+- name: static web page
   hosts: all
   become: yes
-  
+
 
   tasks:
-  template:
-    src: info.j2
-    dest: /var/www/html/dynamic.html
+  - name: coping file to all
+    template:
+      src: info.j2
+      dest: /var/www/html/dynamic.html
+      
+    
+...
