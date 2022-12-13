@@ -2,7 +2,7 @@
 - name: Cretaing dyamic page
   hosts: all
   become: yes
-  var: 
+  vars: 
     user_name: gowtham
   
 
