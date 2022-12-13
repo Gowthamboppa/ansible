@@ -5,7 +5,7 @@
 
 
   tasks:
-  - name: coping file to httpd
+  - name: coping file to all
     copy:
       src: info.html
       dest: /var/www/html/info.html
