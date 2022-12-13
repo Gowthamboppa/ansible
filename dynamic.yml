@@ -1,0 +1,9 @@
+---
+- name: dynamic page using info j2
+  hosts: all
+
+  tasks:
+  template:
+    src: info.j2
+    dest: /var/www/html/dynamic.j2
+...
