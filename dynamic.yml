@@ -1,6 +1,7 @@
 ---
 - name: craeting dyamic page
   hosts: all
+  become: yes
   
 
   tasks:
