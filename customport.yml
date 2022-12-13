@@ -1,0 +1,10 @@
+---
+- name: changing the port dynamically
+  hosts: n1
+  become: yes
+  
+
+  tasks:
+  template:
+    src: httpd.j2
+    dest: /var/www/html/dynamic.html
