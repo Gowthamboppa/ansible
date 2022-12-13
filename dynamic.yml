@@ -1,5 +1,5 @@
 ---
-- name: dynamic page using info j2
+- name: Creating dyanmic page
   hosts: all
 
   tasks:
