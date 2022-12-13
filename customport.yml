@@ -11,4 +11,8 @@
     template:
       src: httpd.j2
       dest: /etc/httpd/conf/httpd.conf
+  - name: restarting httpd
+    service:
+     name: httpd
+     state: restart
 ...
