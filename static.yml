@@ -1,6 +1,7 @@
 ---
 - name: static web page
   hosts: all
+  become: yes
 
 
   tasks:
@@ -8,5 +9,5 @@
     copy:
       src: info.html
       dest: /var/www/html/info.html
-      become: yes
+    
 ...
