@@ -3,7 +3,7 @@
   hosts: all
   become: yes
   var: 
-  user_nmae: gowtham
+    user_nmae: gowtham
   
 
   tasks:
