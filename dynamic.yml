@@ -2,7 +2,7 @@
 - name: static web page
   hosts: all
   become: yes
-  var:
+  vars:
   user_name: Gowthamboppa
 
 
