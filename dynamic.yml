@@ -3,7 +3,7 @@
   hosts: all
   become: yes
   var:
-  username: Gowthamboppa
+  user-name: Gowthamboppa
 
 
   tasks:
