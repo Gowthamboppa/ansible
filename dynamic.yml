@@ -1,5 +1,5 @@
 ---
-- name: cretaing dyamic page
+- name: Cretaing dyamic page
   hosts: all
   become: yes
   var: 
@@ -7,7 +7,9 @@
   
 
   tasks:
-  template:
-    src: info.j2
-    dest: /var/www/html/dynamic.html
+  - name: dynamic username
+    template:
+      src: info.j2
+      dest: /var/www/html/dynamic.html
+
 ...
