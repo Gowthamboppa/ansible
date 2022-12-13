@@ -2,6 +2,8 @@
 - name: static web page
   hosts: all
   become: yes
+  var:
+  username: Gowthamboppa
 
 
   tasks:
