@@ -10,3 +10,4 @@
   template:
     src: info.j2
     dest: /var/www/html/dynamic.html
+...
