@@ -7,15 +7,15 @@
 
 
 - name: dynamic username
-    template:
-      src: info.j2
-      dest: /var/www/html/dynamic.html
+  template:
+    src: info.j2
+    dest: /var/www/html/dynamic.html
 
 - name: changing the port number
-    template:
-      src: httpd.j2
-      dest: /etc/httpd/conf/httpd.conf
-    nofify:
+  template:
+    src: httpd.j2
+    dest: /etc/httpd/conf/httpd.conf
+  nofify:
     - restarting httpd
 ...
 
