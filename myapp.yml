@@ -1,0 +1,42 @@
+---
+- name: deploying my app
+  hosts: n1
+  become: yes
+  
+
+  tasks:
+  - name: install httpd
+    yum:
+      name: httpd
+      state: present
+      
+
+      
+  - name: Start httpd
+    service:
+      name: httpd
+      state: started
+      
+      
+  - name: Enable Httpd
+    service:
+      name: httpd
+      enabled: true
+
+  - name: Install git
+    yum:
+      name: git
+      state: present
+      
+
+      
+  - name: cloning
+    git:
+      dest: /var/www/html
+      repo: https://github.com/ravi2krishna/ecomm.git
+      force: yes      
+      
+
+
+
+...
